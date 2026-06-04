@@ -750,7 +750,6 @@ const broadcastGuessedChat = (senderPublicKey: string, message: string) => {
     setRecentGuesses([]);
     setSecretWord("");
     setWordChoices([]);
-    setGameLogs([]);
 
     setPlayers(prev => {
       const updated = { ...prev };
