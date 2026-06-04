@@ -1,0 +1,19 @@
+{
+  "easy": [
+    "Apple", "Snowman", "Sword", "Tree", "House", "Car", "Cup", "Hat", "Book", "Sun", 
+    "Moon", "Star", "Cloud", "Flower", "Cat", "Dog", "Fish", "Bird", "Chair", "Table",
+    "Boat", "Key", "Shoe", "Clock", "Door", "Window", "Ring", "Heart", "Pizza", "Mushroom"
+  ],
+  "medium": [
+    "Guitar", "Bicycle", "Helicopter", "Penguin", "Castle", "Dragon", "Robot", "Rocket",
+    "Volcano", "Octopus", "Camera", "Telescope", "Microscope", "Train", "Airplane",
+    "Submarine", "Crown", "Anchor", "Dinosaur", "Elephant", "Giraffe", "Spider", "Skull",
+    "Treasure Chest", "Lighthouse", "Windmill", "Cactus", "Umbrella", "Pineapple", "Tornado"
+  ],
+  "hard": [
+    "Eiffel Tower", "Statue of Liberty", "Frankenstein", "Astronaut", "Scuba Diver",
+    "Chameleon", "Brain", "Skeleton", "Grand Piano", "Chandelier", "Roller Coaster",
+    "Ferris Wheel", "Typewriter", "Gramophone", "Microchip", "DNA", "Gargoyle",
+    "Sphinx", "Centaur", "Pegasus", "Motorcycle", "Helmet", "Trophy", "Hourglass"
+  ]
+}

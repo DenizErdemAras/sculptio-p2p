@@ -1,0 +1,461 @@
+@import './app.css';
+@import './ui.css';
+@import './colors.css';
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: 300;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: var(--c-white);
+  background-color: var(--c-bg);
+  font-family: Lexend Deca;
+}
+
+h1 { font-weight: 400; }
+h2 { font-weight: 400; }
+h3 { font-weight: 400; }
+
+.fw-200 { font-weight: 200;}
+.fw-400 { font-weight: 400;}
+
+.fs-10 { font-size: 10px; }
+.fs-12 { font-size: 12px; }
+
+.color-grey { color: var(--c-grey-50); }
+
+.mono {
+  font-family: JetBrains Mono;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center { justify-content: center; }
+.justify-end { justify-content: end; }
+
+.align-center { align-items: center; }
+.align-end { align-items: end; }
+
+.space-between { justify-content: space-between; }
+
+.flex-grow { display: flex; flex-grow: 1; flex-basis: 0; }
+.flex-basis { flex-basis: 0; }
+
+.relative { position: relative; }
+.absolute { position: absolute; }
+
+.pad-0 { padding: 0%; }
+.pad-2 { padding: 2px; }
+.pad-4 { padding: 4px; }
+.pad-6 { padding: 6px; }
+
+.gap-2 { gap: 2px; }
+.gap-4 { gap: 4px; }
+.gap-6 { gap: 6px; }
+
+.margin-6 { margin: 6px; }
+.margin--2 { margin: -2px; }
+.margin--4 { margin: -4px; }
+
+.width-100 { width: 100%; }
+.height-100 { height: 100%; }
+
+.font-16 { font-size: 16px; }
+
+.grid-full-row { grid-column: 1 / -1;}
+
+.panel {
+  background-color: var(--c-grey-15);
+  border: 1px solid var(--c-grey-20);
+  border-radius: 6px;
+  min-width: 60px;
+  min-height: 32px;
+  padding: 6px;
+
+  &.transparent {
+    background-color: hsl(from var(--c-grey-15) h s l / 0.85);
+    border: 1px solid hsl(from var(--c-white) h s l / 0.05);
+    /* backdrop-filter: blur(2px); */
+  }
+}
+
+.card {
+  border-radius: 3px;
+  background-color: hsl(from var(--c-grey-20) h s l / 0.4);
+  border: 1px solid hsl(from var(--c-grey-20) h s l / 0.4);
+  padding:5px;
+  transition: background-color 0.07s;
+  &:hover {
+    background-color: hsl(from var(--c-grey-30) h s l / 0.4);
+    transition: background-color 0s;
+  }
+
+  &.red {
+    background-color: hsl(from var(--c-red-30) h 50 l / 0.4);
+    border: 1px solid hsl(from var(--c-red-30) h 50 l / 0.4);
+  }
+}
+
+.bg {
+  display: flex;
+  background-color: var(--c-bg);
+  border-radius: 6px;
+}
+
+.id-display {
+  font-family: JetBrains Mono;
+  font-size: 10.2px;
+  font-weight: 100 !important;
+  color: var(--c-grey-40);
+  width: fit-content;
+  padding: 0 2px;
+  transform: translateX(-2px);
+  border-radius: 3px;
+
+  &.mid {
+    font-size: 14px;
+    margin-bottom: -2px;
+  }
+
+  &:hover {
+    background-color: var(--c-grey-5);
+    outline: 1px solid var(--c-grey-20);
+    color: var(--c-grey-90);
+    user-select: text;
+  }
+}
+
+.grey-text {
+  color: var(--c-grey-50);
+  &.small {
+    font-size: 16px;
+  }
+}
+
+.hide-buttons:not(:hover) {
+  button {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+button {
+  background-color: var(--c-grey-panel-bg);
+  border: 1px solid var(--c-grey-panel-border);
+  color: var(--c-white);
+  border-radius: 6px;
+  transition: background 0.07s, border 0.07s, color 0.07s, opacity 0.07s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-wrap: nowrap;
+  
+  &:hover {
+    background-color: var(--c-grey-20);
+    border: 1px solid var(--c-grey-25);
+    transition: background 0s, border 0s, color 0s, opacity 0s;
+    box-shadow: 0 0 4px var(--c-grey-15);
+  }
+  
+  &.mid {
+    font-size: 16px;
+    height: 32px;
+    padding: 8px;
+  }
+  
+  &.big {
+    font-size: 26px;
+    padding: 7px;
+  }
+
+  &.small {
+    font-size: 11px;
+    height: 17px;
+    padding: 3px;
+    margin: -2px;
+  }
+  
+  &.height-100 {
+    height: 100%;
+  }
+
+  &.light {
+    background: hsl(0 0 25);
+    border: 1px solid hsl(0 0 30);
+    color: var(--c-white);
+
+    &:hover {
+      background: hsl(0 0 32);
+      border: 1px solid hsl(0 0 37);
+      box-shadow: 0 0 8px hsl(0 0 25);
+    }
+  }
+
+  &.red {
+    background: hsl(356 75 30);
+    border: 1px solid hsl(356 80 35);
+    color: var(--c-white);
+
+    &:hover {
+      background: hsl(356 80 40);
+      border: 1px solid hsl(356 85 50);
+      box-shadow: 0 0 8px hsl(356 100 35);
+    }
+  }
+
+  &.orange {
+    background: hsl(32, 75%, 30%);
+    border: 1px solid hsl(32 80 35);
+    color: var(--c-white);
+
+    &:hover {
+      background: hsl(32 80 40);
+      border: 1px solid hsl(32 85 50);
+      box-shadow: 0 0 8px hsl(32 100 40);
+    }
+  }
+
+  &.close {
+    background: hsl(356 100 20);
+    border: 1px solid hsl(356 100 40);
+    color: hsl(356 100 40);
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+      background: hsl(356 100 30);
+      border: 1px solid hsl(356 100 40);
+      color: var(--c-white);
+      box-shadow: 0 0 8px hsl(356 100 35);
+    }
+  }
+
+  &.submit {
+    background: hsl(204 75 30);
+    border: 1px solid hsl(204 80 35);
+    color: var(--c-white);
+
+    &:hover {
+      background: hsl(204 80 40);
+      border: 1px solid hsl(204 85 50);
+      box-shadow: 0 0 8px hsl(204 100 30);
+    }
+  }
+
+  &.ghost {
+    background: transparent;
+    border: 1px solid rgb(from currentColor r g b  / 0.1);
+    color: rgb(from var(--c-white) r g b / 0.2); 
+
+    &:hover {
+      background-color: var(--c-grey-20);
+      border: 1px solid var(--c-grey-30);
+      color: var(--c-white);
+      box-shadow: 0 0 4px hsl(0 0 20);
+    }
+  }
+
+  &:disabled {
+    background: transparent;
+    color: rgb(from var(--c-white) r g b / 0.2); 
+    border: 1px solid rgb(from var(--c-white) r g b  / 0.1);
+    cursor: not-allowed;
+
+    &:hover {
+      background: transparent;
+      border: 1px solid rgb(from var(--c-white) r g b  / 0.1);
+      box-shadow: 0 0 0px hsl(0 0 0);
+    }
+  }
+}
+
+
+
+input[type="text"], input[type="number"], input[type="password"], select {
+  background-color: var(--c-bg);
+  border: none;
+  height: 32px;
+  /* min-height: 32px; */
+  border-radius: 6px;
+  padding: 6px;
+  color: var(--c-white);
+  text-align: center;
+
+  &:hover, &:focus {
+    background-color: var(--c-grey-5);
+    outline: 1px solid rgb(0 0 0 / 0.25);
+    outline-offset: -1px;
+    box-shadow: inset 0 0 8px rgb(0 0 0 / 0.5);
+  }
+
+  &.width-100  {
+    width: 100;
+  }
+
+  &.align-start {
+    text-align: start;
+  }
+}
+
+input, select {
+  font-family: Lexend Deca;
+  font-weight: 300;
+  padding: 0;
+  font-size: 16px;
+
+  &:disabled {
+    opacity: 40%;
+  }
+}
+
+select {
+  cursor: pointer;
+}
+
+input, select, button {
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0px var(--c-white);
+  }
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  cursor: pointer;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 6px;
+  background-color: var(--c-grey-20);
+  border: 3px solid var(--c-grey-20);
+  outline: 1px solid var(--c-grey-30);
+
+  &:checked {
+    background-color: var(--c-blue-60);
+  }
+
+  &.hidden {
+    display: none;
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+
+
+
+/* 1. Base Input Container */
+input[type="range"] {
+  /* Strip away default WebKit styling completely */
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 100%;
+  background: transparent; /* Required to let the track show through */
+  cursor: pointer;
+  outline: none; /* We will handle focus styles manually for accessibility */
+  margin: 2px 0;
+}
+
+/* 2. The Track */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 3px;
+  /* This is where the magic happens for the "progress" fill. 
+    It reads the --slider-progress variable set by React. 
+  */
+  background: linear-gradient(
+    to right,
+    #6366f1 0%, /* Active track color (e.g., Indigo) */
+    #6366f1 var(--slider-progress), 
+    #e2e8f0 var(--slider-progress), /* Inactive track color (e.g., Gray) */
+    #e2e8f0 100%
+    );
+  background-color: var(--c-grey-20);
+  border: 1px solid var(--c-grey-30); /* Optional track border */
+}
+
+/* 3. The Thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Strip default thumb */
+  appearance: none;
+  
+  /* Dimensions & Shape */
+  height: 16px;
+  width: 16px;
+  border-radius: 4px;
+  
+  /* Positioning: center the thumb on the track */
+  margin-top: -5px; /* (Track Height / 2) - (Thumb Height / 2) -> (8/2) - (24/2) = -8, tweaked to -9 for visual balance */
+  
+  /* Visuals */
+  background-color: var(--c-grey-30);
+  border: 1px solid var(--c-grey-45);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  
+  /* Smooth transitions for hover/active states */
+  transition: transform 0.07s ease-in-out, box-shadow 0.07s ease-in-out;
+}
+
+/* 4. Interactive States (Hover, Focus, Active) */
+
+/* Hover state on the thumb */
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15); /* Slightly enlarge when hovered */
+  box-shadow: 0 0 8px var(--c-grey-25);
+}
+
+/* Active (Click/Drag) state on the thumb */
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(0.95);
+  background-color: var(--c-grey-45);
+  border-color: var(--c-grey-70);
+  box-shadow: 0 0 8px var(--c-grey-30);
+}
+
+/* Accessibility: Focus state for keyboard navigation */
+input[type="range"]:focus::-webkit-slider-thumb {
+  /* Add a focus ring around the thumb instead of the whole input */
+  outline: 2px solid hsl(from var(--c-blue-50) h s l / 0.25 );
+  outline-offset: 2px;
+}
+
+:has(> .parent-hover):not(:hover) > .parent-hover {
+  display: none;
+}

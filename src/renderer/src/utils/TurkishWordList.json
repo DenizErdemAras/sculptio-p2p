@@ -1,0 +1,38 @@
+{
+  "easy": [
+    "elma", "armut", "muz", "çilek", "kiraz", "karpuz", "kavun", "limon", "portakal", "mandalina",
+    "havuç", "turp", "soğan", "sarımsak", "biber", "domates", "patates", "patlıcan", "kabak", "salatalık",
+    "top", "zar", "kupa", "vazo", "saksı", "tencere", "tava", "çaydanlık", "cezve", "fincan",
+    "bardak", "tabak", "kaşık", "çatal", "bıçak", "kepçe", "kevgir", "süzgeç", "rende", "havan",
+    "ağaç", "yaprak", "çiçek", "gül", "lale", "papatya", "çimen", "mantar", "odun", "kütük",
+    "kalp", "yıldız", "bulut", "güneş", "ay", "şimşek", "damla", "kar", "buz", "ateş",
+    "şapka", "bere", "eldiven", "atkı", "çorap", "ayakkabı", "terlik", "çizme", "bot", "kemer",
+    "ev", "çatı", "kapı", "pencere", "baca", "merdiven", "duvar", "çit", "direk", "köprü",
+    "kılıç", "kalkan", "balta", "ok", "yay", "mızrak", "sopa", "değnek", "çekiç", "çivi",
+    "kitap", "defter", "kalem", "silgi", "cetvel", "fırça", "boya", "tuval", "palet", "şövale"
+  ],
+  "medium": [
+    "kedi", "köpek", "kuş", "balık", "fare", "tavşan", "kaplumbağa", "yılan", "kurbağa", "salyangoz",
+    "araba", "otobüs", "kamyon", "traktör", "tren", "vagon", "uçak", "helikopter", "gemi", "tekne",
+    "sandalye", "masa", "koltuk", "yatak", "dolap", "raf", "çekmece", "ayna", "tablo", "çerçeve",
+    "saat", "radyo", "televizyon", "telefon", "bilgisayar", "klavye", "kaset", "monitör", "yazıcı", "hoparlör",
+    "kulaklık", "mikrofon", "kamera", "dürbün", "teleskop", "mikroskop", "gözlük", "büyüteç", "pusula", "fener",
+    "tabanca", "tüfek", "mermi", "tank", "roket", "uydu", "uzaylı", "robot", "makine", "motor",
+    "ampul", "lamba", "avize", "mum", "meşale", "pil", "akü", "kablo", "fiş", "priz",
+    "vida", "somun", "cıvata", "matkap", "testere", "tornavida", "pense", "kazma", "kürek", "tırpan",
+    "şato", "kale", "kule", "çadır", "kulübe", "değirmen", "kuyu", "çeşme", "heykel", "anıt",
+    "çanta", "valiz", "bavul", "cüzdan", "şemsiye", "baston", "kask", "zırh", "taç", "madalya"
+  ],
+  "hard": [
+    "ahtapot", "yengeç", "ıstakoz", "denizanası", "denizat", "balina", "yunus", "köpekbalığı", "penguen", "fok",
+    "aslan", "kaplan", "fil", "zürafa", "gergedan", "suaygırı", "zebra", "deve", "maymun", "goril",
+    "kartal", "baykuş", "papağan", "tavuskuşu", "devekuşu", "leylek", "flamingo", "pelikan", "kuğu", "martı",
+    "örümcek", "akrep", "arı", "kelebek", "sinek", "sivrisinek", "karınca", "böcek", "tırtıl", "solucan",
+    "iskelet", "kafatası", "omurga", "kas", "damar", "beyin", "mide", "akciğer", "böbrek", "karaciğer",
+    "bisiklet", "motosiklet", "scooter", "kaykay", "paten", "fayton", "kızak", "teleferik", "zeplin", "planör",
+    "keman", "piyano", "gitar", "bateri", "saksafon", "trompet", "flüt", "org", "akordeon", "arp",
+    "gramofon", "daktilo", "matbaa", "telesekreter", "pikap", "kasetçalar", "walkman", "teyp", "plak", "projeksiyon",
+    "ejderha", "tekboynuz", "pegasus", "denizkızı", "grifon", "anka", "minotor", "sentor", "medusa", "kiklop",
+    "astronot", "dalgıç", "şövalye", "samuray", "ninja", "korsan", "kovboy", "palyaço", "sihirbaz", "cadı"
+  ]
+}

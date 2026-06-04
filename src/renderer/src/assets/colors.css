@@ -1,0 +1,134 @@
+:root  {
+  --c-primary-color: hsl(190, 100%, 50%);
+  --c-bg: hsl(0 0 6.5);
+
+  --c-white: hsl(0 0 100);
+  --c-black: hsl(0 0 0);
+  
+  --c-grey-color:   hsl(0, 0%, 50%);
+
+  --c-grey-95:      hsl(from var(--c-grey-color) h s 95);
+  --c-grey-90:      hsl(from var(--c-grey-color) h s 90);
+  --c-grey-85:      hsl(from var(--c-grey-color) h s 85);
+  --c-grey-80:      hsl(from var(--c-grey-color) h s 80);
+  --c-grey-75:      hsl(from var(--c-grey-color) h s 75);
+  --c-grey-70:      hsl(from var(--c-grey-color) h s 70);
+  --c-grey-65:      hsl(from var(--c-grey-color) h s 65);
+  --c-grey-60:      hsl(from var(--c-grey-color) h s 60);
+  --c-grey-55:      hsl(from var(--c-grey-color) h s 55);
+  --c-grey-50:      hsl(from var(--c-grey-color) h s 50);
+  --c-grey-45:      hsl(from var(--c-grey-color) h s 45);
+  --c-grey-40:      hsl(from var(--c-grey-color) h s 40);
+  --c-grey-35:      hsl(from var(--c-grey-color) h s 35);
+  --c-grey-30:      hsl(from var(--c-grey-color) h s 30);
+  --c-grey-25:      hsl(from var(--c-grey-color) h s 25);
+  --c-grey-20:      hsl(from var(--c-grey-color) h s 20);
+  --c-grey-15:      hsl(from var(--c-grey-color) h s 15);
+  --c-grey-10:      hsl(from var(--c-grey-color) h s 10);
+  --c-grey-5:       hsl(from var(--c-grey-color) h s 05);
+
+  --c-grey-panel-bg:   hsl(from var(--c-grey-color) h s 16 / 85%);
+  --c-grey-panel-border:   hsl(from var(--c-grey-color) h s 20 / 85%);
+
+  --c-blue-color:   hsl(204, 100%, 50%);
+
+  --c-blue-95:      hsl(from var(--c-blue-color) h s 95);
+  --c-blue-90:      hsl(from var(--c-blue-color) h s 90);
+  --c-blue-85:      hsl(from var(--c-blue-color) h s 85);
+  --c-blue-80:      hsl(from var(--c-blue-color) h s 80);
+  --c-blue-75:      hsl(from var(--c-blue-color) h s 75);
+  --c-blue-70:      hsl(from var(--c-blue-color) h s 70);
+  --c-blue-65:      hsl(from var(--c-blue-color) h s 65);
+  --c-blue-60:      hsl(from var(--c-blue-color) h s 60);
+  --c-blue-55:      hsl(from var(--c-blue-color) h s 55);
+  --c-blue-50:      hsl(from var(--c-blue-color) h s 50);
+  --c-blue-45:      hsl(from var(--c-blue-color) h s 45);
+  --c-blue-40:      hsl(from var(--c-blue-color) h s 40);
+  --c-blue-35:      hsl(from var(--c-blue-color) h s 35);
+  --c-blue-30:      hsl(from var(--c-blue-color) h s 30);
+  --c-blue-25:      hsl(from var(--c-blue-color) h s 25);
+  --c-blue-20:      hsl(from var(--c-blue-color) h s 20);
+  --c-blue-15:      hsl(from var(--c-blue-color) h s 15);
+  --c-blue-10:      hsl(from var(--c-blue-color) h s 10);
+  --c-blue-5:       hsl(from var(--c-blue-color) h s 05);
+
+  --c-red-color:   hsl(356, 100%, 50%);
+
+  --c-red-95:      hsl(from var(--c-red-color) h s 95);
+  --c-red-90:      hsl(from var(--c-red-color) h s 90);
+  --c-red-85:      hsl(from var(--c-red-color) h s 85);
+  --c-red-80:      hsl(from var(--c-red-color) h s 80);
+  --c-red-75:      hsl(from var(--c-red-color) h s 75);
+  --c-red-70:      hsl(from var(--c-red-color) h s 70);
+  --c-red-65:      hsl(from var(--c-red-color) h s 65);
+  --c-red-60:      hsl(from var(--c-red-color) h s 60);
+  --c-red-55:      hsl(from var(--c-red-color) h s 55);
+  --c-red-50:      hsl(from var(--c-red-color) h s 50);
+  --c-red-45:      hsl(from var(--c-red-color) h s 45);
+  --c-red-40:      hsl(from var(--c-red-color) h s 40);
+  --c-red-35:      hsl(from var(--c-red-color) h s 35);
+  --c-red-30:      hsl(from var(--c-red-color) h s 30);
+  --c-red-25:      hsl(from var(--c-red-color) h s 25);
+  --c-red-20:      hsl(from var(--c-red-color) h s 20);
+  --c-red-15:      hsl(from var(--c-red-color) h s 15);
+  --c-red-10:      hsl(from var(--c-red-color) h s 10);
+  --c-red-5:       hsl(from var(--c-red-color) h s 05);
+
+  --c-orange-color:   hsl(25, 100%, 50%);
+
+  --c-orange-95:      hsl(from var(--c-orange-color) h s 95);
+  --c-orange-90:      hsl(from var(--c-orange-color) h s 90);
+  --c-orange-85:      hsl(from var(--c-orange-color) h s 85);
+  --c-orange-80:      hsl(from var(--c-orange-color) h s 80);
+  --c-orange-75:      hsl(from var(--c-orange-color) h s 75);
+  --c-orange-70:      hsl(from var(--c-orange-color) h s 70);
+  --c-orange-65:      hsl(from var(--c-orange-color) h s 65);
+  --c-orange-60:      hsl(from var(--c-orange-color) h s 60);
+  --c-orange-55:      hsl(from var(--c-orange-color) h s 55);
+  --c-orange-50:      hsl(from var(--c-orange-color) h s 50);
+  --c-orange-45:      hsl(from var(--c-orange-color) h s 45);
+  --c-orange-40:      hsl(from var(--c-orange-color) h s 40);
+  --c-orange-35:      hsl(from var(--c-orange-color) h s 35);
+  --c-orange-30:      hsl(from var(--c-orange-color) h s 30);
+  --c-orange-25:      hsl(from var(--c-orange-color) h s 25);
+  --c-orange-20:      hsl(from var(--c-orange-color) h s 20);
+  --c-orange-15:      hsl(from var(--c-orange-color) h s 15);
+  --c-orange-10:      hsl(from var(--c-orange-color) h s 10);
+  --c-orange-5:       hsl(from var(--c-orange-color) h s 05);
+
+
+  --c-yellow-color:   hsl(36, 100%, 50%);
+
+  --c-yellow-95:      hsl(from var(--c-yellow-color) h s 95);
+  --c-yellow-90:      hsl(from var(--c-yellow-color) h s 90);
+  --c-yellow-85:      hsl(from var(--c-yellow-color) h s 85);
+  --c-yellow-80:      hsl(from var(--c-yellow-color) h s 80);
+  --c-yellow-75:      hsl(from var(--c-yellow-color) h s 75);
+  --c-yellow-70:      hsl(from var(--c-yellow-color) h s 70);
+  --c-yellow-65:      hsl(from var(--c-yellow-color) h s 65);
+  --c-yellow-60:      hsl(from var(--c-yellow-color) h s 60);
+  --c-yellow-55:      hsl(from var(--c-yellow-color) h s 55);
+  --c-yellow-50:      hsl(from var(--c-yellow-color) h s 50);
+  --c-yellow-45:      hsl(from var(--c-yellow-color) h s 45);
+  --c-yellow-40:      hsl(from var(--c-yellow-color) h s 40);
+  --c-yellow-35:      hsl(from var(--c-yellow-color) h s 35);
+  --c-yellow-30:      hsl(from var(--c-yellow-color) h s 30);
+  --c-yellow-25:      hsl(from var(--c-yellow-color) h s 25);
+  --c-yellow-20:      hsl(from var(--c-yellow-color) h s 20);
+  --c-yellow-15:      hsl(from var(--c-yellow-color) h s 15);
+  --c-yellow-10:      hsl(from var(--c-yellow-color) h s 10);
+  --c-yellow-5:       hsl(from var(--c-yellow-color) h s 05);
+}
+
+
+.opacity-100 { opacity: 100% ;}
+.opacity-90 { opacity: 90% ;}
+.opacity-80 { opacity: 80% ;}
+.opacity-70 { opacity: 70% ;}
+.opacity-60 { opacity: 60% ;}
+.opacity-50 { opacity: 50% ;}
+.opacity-40 { opacity: 40% ;}
+.opacity-30 { opacity: 30% ;}
+.opacity-20 { opacity: 20% ;}
+.opacity-10 { opacity: 10% ;}
+.opacity-0 { opacity: 0% ;}
