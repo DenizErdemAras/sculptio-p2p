@@ -15,12 +15,12 @@ Players share or join rooms via the distributed network.
 
 
 ## Network & Privacy Notice
-
-Sculptio operates on a completely decentralized architecture utilizing a distributed **DHT network** to discover peers and establish **direct connections** without relying on a centralized backend server. 
-
-Please be aware of the following:
-* **IP Visibility:** Because connections are peer-to-peer, your public IP address will be visible to other players who connect to your room, as well as to random nodes assisting in the network hole-punching process.
-* **VPN Recommendation:** If you require absolute privacy and wish to hide your residential IP address from other peers on the network, it is highly recommended to run a **VPN (Virtual Private Network)** while playing the game.
+> [!CAUTION]
+> Sculptio operates on a completely decentralized architecture utilizing a distributed **DHT network** to discover peers and establish **direct connections** without relying on a centralized backend server. 
+>
+> Please be aware of the following:
+> * **IP Visibility:** Because connections are peer-to-peer, your public IP address will be visible to other players who connect to your room, as well as to random nodes assisting in the network hole-punching process.
+> * **VPN Recommendation:** If you require absolute privacy and wish to hide your residential IP address from other peers on the network, it is highly recommended to run a **VPN (Virtual Private Network)** while playing the game.
 
 
 ## How to Build from Source
