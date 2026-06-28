@@ -23,6 +23,11 @@ Players share or join rooms via the distributed network.
 > * **VPN Recommendation:** If you require absolute privacy and wish to hide your residential IP address from other peers on the network, it is highly recommended to run a **VPN (Virtual Private Network)** while playing the game.
 
 
+## Download
+
+You can download the latest version [here](https://github.com/DenizErdemAras/sculptio-p2p/releases/latest).
+
+
 ## How to Build from Source
 
 You can build Sculptio locally for Windows, macOS, or Linux. Please ensure you have [Node.js](https://nodejs.org/) installed on your system before proceeding.
